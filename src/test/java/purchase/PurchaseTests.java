@@ -35,13 +35,13 @@ public class PurchaseTests extends BaseTests {
     @Test (priority = 3)
     public void testPurchaseLaptop() throws InterruptedException {
         ProductPage productPage = homePage.clickCategoryLaptop();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         productPage = homePage.clickLaptopI5();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         CartPage cartPage = productPage.addProductToCart();
         cartPage = productPage.goToCart();
         PlaceOrder placeOrder = cartPage.placeOrder();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         placeOrder.setInputName("Argenis Pinto");
         placeOrder.setCountryName("Argentina");
         placeOrder.setCityName("Buenos Aires");
